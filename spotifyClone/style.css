@@ -1,0 +1,370 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+margin: 0;
+background-color: #000;
+color: #fff;
+overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+}
+
+.saidbar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.main-content{
+    background-color: black;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height: 1.2rem;
+    opacity: 0.7;
+    padding: 0.8rem 1rem;
+}
+
+.nav-option i{
+    font-size: 1.3rem;
+}
+.nav-option a{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.libray{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.lib-option img{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+.options .icon{
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.5rem 0.5rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.options .icon:hover{
+    opacity: 1;
+}
+
+.box{
+    margin: 10px 0 10px 0;
+   height: 10rem;
+   background-color: #232323;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   border-radius: 10px;
+}
+
+.bedget{
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px;
+    opacity: 0.8;
+    border: none;
+}
+
+.bedget:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 5px #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* MAIN SECTION */
+
+.main-content{
+    background-color: #121212;
+    margin-top: 0.5rem;
+}
+
+.sticky-bar{
+    position: sticky;
+    top: 0px;
+    background-color: #121212;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.stiky-nav-content {
+     margin: 1rem;
+}
+
+.stiky-nav-content button{
+    margin: 0.4rem;
+}
+
+@media (max-width: 1000px) {
+    .hide{
+        display: none;
+    }
+    
+}
+
+
+/* CARD SECTIONS */
+
+.align{
+    align-items: center;
+    width: 100%;
+    
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem 1rem 0.5rem 0rem;
+    cursor: pointer;
+}
+
+.cards1{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.font-item{
+    font-weight: 700;
+}
+
+.font-content{
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.song-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.featurs-cards{
+    display: flex;
+
+}
+
+/* MUSIC-PLAYER */
+.music-player{
+    display: flex;
+}
+
+.album{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+   
+}
+
+.controls{
+    width: 25%;
+}
+
+.player-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.playback-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent ;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1db760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+/* FOOTER  */
+
+
+.footer-main{
+    height: 30vh;
+}
+.foot{
+    width: 100%;
+    display: flex;
+}
+
+.foot-main-box{
+    display: flex;
+    width: 80%;
+}
+
+.foot-text{
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+.foot-box1 p{
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.foot-box1 p:hover{
+    opacity: 1;
+}
+
+.foot-box1{
+    margin-top: 50px;
+   margin-left: 20px;
+}
+
+
+/* social icon bar */
+
+.foot-main-box-2{
+   width: 20%;
+   height: 20%;
+   margin-top: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.footBox-2 i{
+   font-size: 1.8rem;
+   margin: 10px;
+   opacity: 0.8;
+}
+.footBox-2 i:hover{
+    transform: scale(1.2);
+    transition-duration: 0ms;
+    opacity: 1;
+}
+
+.line{
+    width: 97%;
+    margin-left: 20px;
+    border-top: 1px solid white;
+    opacity: 0.8;
+}
+
+/* BOTTOM FOOTER  -------->  This is the bottom part of footer */
+
+.foot-bottom{
+    height: 180px;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-botm-text{
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foot-botm-text-2{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.foot-botm-text-2 p{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.foot-botm-text-2 p:hover{
+    opacity: 1;
+}
+.foot-botm-text p{
+    font-size: 0.9rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.foot-botm-text p:hover{
+    opacity: 1;
+}
